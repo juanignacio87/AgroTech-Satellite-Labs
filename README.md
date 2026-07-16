@@ -15,6 +15,9 @@ The project follows a complete workflow using **Sentinel-2 imagery** to monitor 
 - Rioxarray
 - Xarray
 - Matplotlib
+- Scikit-learn
+- NASA POWER
+- Isolation Forest
 
 ## Repository Structure
 
@@ -38,13 +41,24 @@ The original laboratory has been adapted to a **real agricultural field located 
 
 The objective is to analyze the complete agricultural season through satellite imagery and geospatial analysis.
 
+## Main Results
+
+- Real agricultural parcel in Buenos Aires Province, Argentina
+- 18 Sentinel-2 L2A scenes for the 2024–2025 soybean season
+- NDVI peak close to 0.87 during March 2025
+- NDVI integral: 79 NDVI·day
+- Z-score anomalies: 15.4%
+- Isolation Forest anomalies: 10.0%
+- Final prescription doses: 0, 60, 90 and 110 kg N/ha
+- Exported georeferenced prescription map: `prescripcion_N.tif`
+
 ## Laboratories
 
-- ✅ Lab 1 – Parcel anatomy
-- ⏳ Lab 2 – Data cube
-- ⏳ Lab 3 – Vegetation indices
-- ⏳ Lab 4 – Climate time series
-- ⏳ Lab 5 – Prescription maps
+- ✅ Lab 1 – Parcel anatomy and Sentinel-2 inventory
+- ✅ Lab 2 – Multiband data cube and SCL mask
+- ✅ Lab 3 – NDVI, EVI, NDRE, NDWI and vigor zoning
+- ✅ Lab 4 – NDVI time series and NASA POWER climate integration
+- ✅ Lab 5 – Anomaly detection and variable-rate prescription map
 
 ## Author
 
